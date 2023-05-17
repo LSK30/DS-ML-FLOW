@@ -12,19 +12,19 @@ FILE_DIR = os.path.dirname(os.path.abspath(__file__))
 # absolute path to this file's root directory
 dir_of_interest1 = os.path.join(FILE_DIR,"resources","images","mypic.jpg")
 st.set_page_config(layout="wide")
-st.subheader(":red[About me : :sunglasses: ]")
+st.subheader(":red[About me :  ]")
 col1,col2,col3=st.columns(3, gap='small')
 with col1:
-    st.subheader("[:red[LinkedIn:]](https://linkedin.com/in/lsk30)")
+    st.subheader("[:red[LinkedIn]](https://linkedin.com/in/lsk30)")
 with col2:
-    st.subheader("[:red[GitHub:]](https://github.com/LSK30)")
+    st.subheader("[:red[GitHub]](https://github.com/LSK30)")
 with col3:
     if st.button('Bio'):
         img = image.imread(dir_of_interest1)
-        st.subheader(':red[Name: Landa  Shasi Kumar]')
-        st.subheader(':red[Education: B.Tech Civil Engineering]')
+        st.subheader(':Voilet[Name: Landa Shasi Kumar]')
+        st.subheader(':Voilet[Education: B.Tech Civil Engineering]')
         st.image(img)
-        st.subheader(':red[ Data Scientist :sunglasses:]')
+        st.subheader(':red[ Data Scientist]')
 st.markdown("""
     <style>
         body {
